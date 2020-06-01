@@ -1,0 +1,434 @@
+body {
+	background-color: #cccccc; /** bacground-color of body (background color of our page) **/
+	font-size: 16px; /** font-size for entire content inside body **/
+  color: #fff;  /** text color for content inside body **/
+  font-family: 'Oxygen', sans-serif; /** font-family for content inside body **/
+}
+
+/** header styling starts **/
+
+#header-nav {
+	background-color: #003366; /** background-color for navbar , if you give this to container it will spread till container width only **/
+    border:0; /** to remove navbar default borders **/
+	border-radius:0; /** to remove curves of borders of default navbar **/
+}
+
+#logo-img {
+  background: url('../images/ramesh-logo_large.png') no-repeat;
+  width: 150px;
+  height: 150px;
+  margin: 10px 15px 10px 0;
+}
+
+.navbar-brand {
+  padding-top: 25px; /** this padding-top makes brand name shift down by 25 px **/
+}
+
+.navbar-brand h1 { /* Restaurant name styling*/
+  font-style: italic; /** Lora font given to restaurant name **/
+  color: #cccccc;  /** text color of Restaurant name **/
+  font-size: 1.5em; /** font-size of restaurant name increase by 50% **/  
+  text-transform: uppercase; /** text of restaurant name is upper case **/
+  font-weight: bold;  /** bold font for restaurant name **/
+  text-shadow: 1px 1px 1px #222; /** text shadow **/
+  margin-top: 0; /** margin-top decreased to make restaurant name move upwards**/
+  margin-bottom: 0; /** margin-bottom decreased to make kosher certified icon and name move upwards **/
+  line-height: .75;  /*** line heeight decreased **/
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none; /** removing line below restaurant name **/
+}
+
+.navbar-brand p { /* Kosher cert */
+  color: #e18a07;  /** grey color text of kosher certied name **/
+  text-transform: uppercase; /** upper case **/
+  font-size: 1em; /** font-size decreased compared to default from body **/
+  margin-top: 15px; /** margin top 15px , to bring kosher certified icon and name down  **/
+  font-style: italic;
+}
+
+.navbar-brand p span { /* Star-K */
+  vertical-align: middle; /** bringing kosher certified name middle to icon **/
+}
+
+#nav-list {
+  margin-top: 10px; /** bringing nav-list down **/
+}
+
+#nav-list a {
+  color: #ffcc00; /** changing color of icons and names in nav-list **/
+  text-align: center; /** bringing names to align in center with icon **/
+}
+
+#nav-list a:hover {
+  background: #E7E7E7; /** on hover of nav-list items give background color **/
+}
+
+#nav-list a span {
+  font-size: 1.8em; /** increasing font-size of nav-list names and icons **/
+}
+
+#phone {
+  margin-top: 5px; /** bring phone no down in line with navlist icons **/
+}
+
+#phone a { /* Phone number */
+  text-align: right;  /** aligning ph no right **/
+  padding-bottom: 0;  /** decreased padding to bring We dleiver text upwards **/
+}
+
+#phone div { /* We Deliver text styling */
+  color: #cccccc; /** color of We deliver text **/
+  text-align: right; /** right aligned **/
+  padding-right: 15px; /** padding right to adjust we deliver text with ph no **/
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f; /** giving border to button and horizontal lines inside button **/
+}
+
+}
+
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+ 
+
+/** Header styling Ends **/
+
+#call-btn > a {
+    font-size: 1.5em; /** ear image and phno font increased in xs mode **/
+    display: block;
+    margin: 0 20px; /** 20 px margin from left and right to bring div in xs in align with container of header  **/  
+    padding: 10px;  /** 10 px padding overall of phno in div in xs **/
+    border: 2px solid #fff; /** white border around div in xs **/
+    background-color: #f6b319; /** yellow bg color of div **/
+    color: #951c49; /** text color of phno meron **/
+  }
+
+
+/* HOME PAGE */
+.container .jumbotron {
+  box-shadow: 0 0 50px #3F0C1F; /** box shadow for jombotron **/
+  border: 2px solid #3F0C1F; /** border for jombotron **/
+}
+
+#menu-tile, #specials-tile, #map-tile { /** all three columns of navigation tiles styling **/
+  height: 250px; /** height of column of navigation tiles **/
+  width: 100%; /** occupies entire column **/
+  margin-bottom: 15px; /*** bottom space below nav tiles **/
+  position: relative; /** relative position to make span reach bottom of tiles by using absolute position **/
+  border: 2px solid #3F0C1F; /** border for navigation tiles **/
+  overflow: hidden; /** if content exceding column , then is not allowed to go out of it **/
+}
+
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc; /** box shadow on hover property on all columns **/
+}
+
+#menu-tile {
+  background: url('../images/rsz_childhood-1.jpg') no-repeat; /** backgroundimage of menu tile, no repeat means image not repeated in column **/
+  background-position: center; /*** position center means iamge is responsive to width of column and stays with ib div **/
+}
+
+#specials-tile {/** lly to manu tiles above **/
+  background: url('../images/rsz_teenage-1.jpg') no-repeat;
+  background-position: center;
+}
+
+#menu-tile span, #specials-tile span, #map-tile span { /** adjusting span inside div of column of menu,specials **/
+  position: absolute;  /** posiyion absolute , to make position relative to div ie parent **/
+  bottom: 0; /** wrt to div bottom **/
+  right: 0; /** wrt to div right **/
+  width: 100%; /** span occupies full width in div **/
+  text-align: center; /** span aligned center in div **/
+  font-size: 1.6em;  /** font-size of span increased wrt **/
+  text-transform: uppercase; /** uppercase text **/
+  background-color: #000;  /** gray background-color for span **/
+  color: #fff; /** text color of span **/
+  opacity: .8;  /* opacity of span, so that background image is visible **/
+}
+
+/* FOOTER */
+.panel-footer {
+  margin-top: 30px; /*** margin-top to seperate from nav tiles **/
+  padding-top: 35px; /** to seperate content inside footer from border-top of footer **/ 
+  padding-bottom: 30px;  /** to seperate content inside footer from border-bottom of footer **/ 
+  background-color: #222; /** bacground-color of footer **/
+  border-top: 0; /** removing border-top **/
+}
+.panel-footer div.row {
+  margin-bottom: 35px; /** seperating row from text below it **/
+}
+#hours, #address {
+  line-height: 2;  /** line height increased **/
+}
+#hours > span, #address > span {
+  font-size: 1.3em;  /** immediate span child of hours div font increased **/
+}
+#address p { /** text inside address div **/
+  color: #557c3e; /** text color of p **/
+  font-size: .8em; /** font decreased of p **/
+  line-height: 1.8; /** line height of p increased **/
+}
+#testimonials {
+  font-style: italic; /** italic font for testimonials div **/
+}
+#testimonials p:nth-child(2) {
+  margin-top: 25px;     /** 2nd p element inside testimonials div seperated from first p element by 25 px **/
+} 
+/* END FOOTER */
+
+
+/* END HOME PAGE */
+
+/* MENU CATEGORIES PAGE */
+.category-tile { 
+  position: relative; /** div inside col positioned relativr **/
+  border: 2px solid #cccccc;  /** border of div **/
+  overflow: hidden;
+  width: 200px; /** because image inside div width is 200 **/
+  height: 200px; /** because image inside div height is 200 **/
+  margin: 0 auto 50px; /** bottom 15 px to seperate from other col below, auto to adjust image inside  accordingly **/
+  transition: transform .2s; /** zooming of div **/
+}
+
+.category-tile span {  /** these all styles description similar to what we did for span in navigation tiles of index.html **/
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+.category-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+  -ms-transform: scale(1.5); /* IE 9 */  /** all below 3 are for zooming on hover of div **/
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.3);
+}
+
+#menu-categories-title {
+color:#003366;
+}
+
+#menu-categories-title + div {
+  margin-bottom: 50px;  /** margin bottom only for description of title, if u remove + this margin bottom will apply for all divs inside menu-categories tiles **/
+  font-style:italic;
+  color:#003366;
+}
+/* END MENU CATEGORIES PAGE */
+
+/* SINGLE CATEGORY PAGE */
+.menu-item-tile {
+  margin-bottom: 25px;
+}
+.menu-item-tile hr {
+  width: 80%;
+}
+.menu-item-tile .menu-item-price {
+  font-size: 1.1em;
+  text-align: right;
+  margin-top: -15px;
+  margin-right: -15px;
+}
+.menu-item-tile .menu-item-price span {
+  font-size: .6em;
+}
+.menu-item-photo {
+  position: relative;
+  border: 2px solid #3F0C1F; 
+  overflow: hidden;
+  padding: 0;
+  margin-right: -15px;
+  margin-left: auto;
+  margin-bottom: 20px;
+  max-width: 250px;
+}
+.menu-item-photo div {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80px;
+  background-color: #557c3e;
+  text-align: center;
+}
+.menu-item-description {
+  padding-right: 30px;
+}
+h3.menu-item-title {
+  margin: 0 0 10px;
+}
+.menu-item-details {
+  font-size: .9em;
+  font-style: italic;
+}
+/* END SINGLE CATEGORY PAGE */
+
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  .container .jumbotron {
+    background: url('../images/jumbotron_1200.jpg') no-repeat;
+    height: 675px;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
+  #logo-img {
+    background: url('../images/ramesh-logo_medium.png') no-repeat;
+    width: 100px;
+    height: 100px;
+    margin: 5px 5px 5px 0;
+  }
+  /* End Header */
+
+  /* Home Page */
+  .container .jumbotron {
+    background: url('../images/jumbotron_992.jpg') no-repeat;
+    height: 558px;
+  }
+  /* End Home Page */
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Home Page */
+  .container .jumbotron {
+    background: url('../images/jumbotron_768.jpg') no-repeat;
+    height: 432px;
+  }
+  /* End Home Page */
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+  .navbar-brand p { /* Kosher cert */
+    font-size: .6em;
+    margin-top: 12px;
+  }
+  .navbar-brand p img { /* Star-K */
+    height: 20px;
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+
+  #call-btn > a {
+    font-size: 1.5em;
+    display: block;
+    margin: 0 20px;
+    padding: 10px;
+    border: 2px solid #fff;
+    background-color: #f6b319;
+    color: #951c49;
+  }
+  #xs-deliver {
+    margin-top: 5px;
+    font-size: .7em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  /* End Header */
+
+  /* Footer */
+  .panel-footer section {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .panel-footer section:nth-child(3) {
+    margin-bottom: 0; /* margin already exists on the whole row */
+  }
+  .panel-footer section hr {
+    width: 50%;
+  }
+  /* End Footer */
+
+  /* Home Page */
+  .container .jumbotron {
+    margin-top: 30px;
+    padding: 0;
+  }
+  #menu-tile, #specials-tile {
+    width: 360px;
+    margin: 0 auto 15px;
+  }
+
+  .menu-item-photo {
+    margin-right: auto;
+  }
+  .menu-item-tile .menu-item-price {
+    text-align: center;
+  }
+  .menu-item-description {
+    text-align: center;;
+  }
+}
+
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+  /* Header */
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 5px;
+    font-size: 6vw;
+  }
+  /* End Header */
+  
+  /* Home page */
+  #menu-tile, #specials-tile {
+    width: 280px;
+    margin: 0 auto 15px;
+  }
+
+  .col-xxs-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
