@@ -82,7 +82,7 @@ h3 {
 }
 
 #nav-list a:hover {
-  background: #A8A8A8; /** on hover of nav-list items give background color **/
+  background: white; /** on hover of nav-list items give background color **/
 }
 
 #nav-list a span {
