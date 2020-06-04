@@ -1,14 +1,32 @@
 body {
-	background-color: #cccccc; /** bacground-color of body (background color of our page) **/
+	background-color: white; /** bacground-color of body (background color of our page) **/
 	font-size: 16px; /** font-size for entire content inside body **/
-  color: #fff;  /** text color for content inside body **/
+  color: black;  /** text color for content inside body **/
   font-family: 'Oxygen', sans-serif; /** font-family for content inside body **/
+
 }
+
+h1 {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:1.75em;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+
+.row {
+  background-color: #A8A8A8;;
+}
+
 
 /** header styling starts **/
 
 #header-nav {
-	background-color: #003366; /** background-color for navbar , if you give this to container it will spread till container width only **/
+	background-color: #A8A8A8; /** background-color for navbar , if you give this to container it will spread till container width only **/
     border:0; /** to remove navbar default borders **/
 	border-radius:0; /** to remove curves of borders of default navbar **/
 }
@@ -21,12 +39,12 @@ body {
 }
 
 .navbar-brand {
-  padding-top: 25px; /** this padding-top makes brand name shift down by 25 px **/
+   /** this padding-top makes brand name shift down by 25 px **/
 }
 
 .navbar-brand h1 { /* Restaurant name styling*/
-  font-style: italic; /** Lora font given to restaurant name **/
-  color: #cccccc;  /** text color of Restaurant name **/
+  font-style: bold; /** Lora font given to restaurant name **/
+  color: black;  /** text color of Restaurant name **/
   font-size: 1.5em; /** font-size of restaurant name increase by 50% **/  
   text-transform: uppercase; /** text of restaurant name is upper case **/
   font-weight: bold;  /** bold font for restaurant name **/
@@ -54,15 +72,17 @@ body {
 
 #nav-list {
   margin-top: 10px; /** bringing nav-list down **/
+
 }
 
 #nav-list a {
-  color: #ffcc00; /** changing color of icons and names in nav-list **/
+  color: black; /** changing color of icons and names in nav-list **/
   text-align: center; /** bringing names to align in center with icon **/
+  background-color:#D6ED17FF;
 }
 
 #nav-list a:hover {
-  background: #E7E7E7; /** on hover of nav-list items give background color **/
+  background: #A8A8A8; /** on hover of nav-list items give background color **/
 }
 
 #nav-list a span {
@@ -85,7 +105,7 @@ body {
 }
 
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-  border: 1px solid #61122f; /** giving border to button and horizontal lines inside button **/
+  border: 2px solid #D6ED17FF /** giving border to button and horizontal lines inside button **/
 }
 
 }
@@ -277,6 +297,7 @@ h3.menu-item-title {
   .container .jumbotron {
     background: url('../images/jumbotron_1200.jpg') no-repeat;
     height: 675px;
+
   }
 }
 
@@ -350,6 +371,10 @@ h3.menu-item-title {
     font-size: .7em;
     letter-spacing: .1em;
     text-transform: uppercase;
+  }
+
+  .row {
+    margin:8px;
   }
   /* End Header */
 

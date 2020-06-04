@@ -4,7 +4,7 @@
    <meta chartset="utf-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- remove zoom in mobile view -->
-   <title>Bolleddula Ramesh & Family</title> <!--this name  visible when you open this page on browser-->
+   <title>Mod3 Assignment</title> <!--this name  visible when you open this page on browser-->
    <link rel="stylesheet" href="css/bootstrap.min.css"> <!-- bootsrap framework reference -->
    <link rel="stylesheet" href="css/styles.css"> <!-- our external stylesheet reference -->
    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'><!-- oxygen font -->  
@@ -16,16 +16,8 @@
       <nav id="header-nav" class="navbar navbar-default"> <!-- navbar  (header made using navbar) -->
       	<div class="container"> <!-- because content in header should not fill till width off browser -->
          <div class="navbar-header"> <!-- for header image inside navbar (bootstrap default class)-->
-           <a href="index.html"> <!-- on click leads to index.html page, hover is by default -->
-           	<div id="logo-img" class="pull-left visible-md visible-lg"> <!-- image on click leads to index.html, because of inhertance from <a>, only visible in md,lg screens due to visible-md ,visible-lg classes, this is pulled left inorder that navbar brnd should align with image in single line (2 float left divs align in single line) -->
-  	        </div>
-           </a>
            <div class="navbar-brand"> <!-- bootstrap default class for brand name inside nav header, by default this is left floated -->
-             <a href="index.html"><h1>Bolleddula's Album</h1></a> <!-- on click of AVR Bricks , will lead to index.html -->
-            <p>
-              <img src="images/star-k-logo.png" alt="Kosher certification"> <!-- star image beside Kosher Certified name usng span tag -->
-              <span>Dive Into Our Memorie's</span> <!-- inline to star image because of span tag -->
-            </p>
+             <h1>Food,LLC</h1> <!-- on click of AVR Bricks , will lead to index.html -->
           </div>
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false"> <!-- this is collapsed menu button only visible in xs mode, navbar-toggle collapsed class gives some styling to button and indicates button is in collapsed condition, data-toggle,data-target are selector Apis to render js functionality for button -->
             <span class="sr-only">Toggle navigation</span> <!-- sr-only class indicates this is screen reader ,not visible in UI -->
@@ -36,22 +28,19 @@
 </div>
 
 <div id="collapsable-nav" class="collapse navbar-collapse"> <!-- this id value should match with data-target value of button,so that the button js functionality is applied on this li items -->
-           <ul id="nav-list" class="nav navbar-nav navbar-right"> <!-- nav-list class gives styling for all li items  navbar-right pulls nav list to right-->
-            <li class="visible-xs active"> <!-- visible-xs class means only visible in xs mode, active class means indicate current li on which we are working -->
-              <a href="index.html"> <!-- on click opens index.html page -->
-                <span class="glyphicon glyphicon-home"></span> Home</a> <!-- home icon with in line name Home , on click gives index.html page as they are childs of <a> -->
-            </li>
+           <ul id="nav-list" class="nav navbar-nav navbar-right visible-xs"> <!-- nav-list class gives styling for all li items  navbar-right pulls nav list to right-->
+          
             <li>
-              <a href="menu-categories.html"> <!-- on click gives menu-categories.html page -->
-                <span class="glyphicon glyphicon-heart"></span><br class="hidden-xs">Childhood</a> <!-- cutlery icon with Menu name , this Menu name is below cutlery icon in all modes except xs mode because of class hidden-xs given to br, on click leads to menu-categories.html page -->
+              <a href="#"> <!-- on click gives menu-categories.html page -->
+               Chicken</a> <!-- cutlery icon with Menu name , this Menu name is below cutlery icon in all modes except xs mode because of class hidden-xs given to br, on click leads to menu-categories.html page -->
             </li>
             <li>
               <a href="#"> <!-- on click leads to error page because no url mentioned in <a> -->
-                <span class="glyphicon glyphicon-fire"></span><br class="hidden-xs">Teenage</a> <!-- info-sign icon with About name , this About name is below info-sign icon in all modes except xs mode because of class hidden-xs given to br, on click leads to eror page as no Url Given to <a> --> 
+                Beef</a> <!-- info-sign icon with About name , this About name is below info-sign icon in all modes except xs mode because of class hidden-xs given to br, on click leads to eror page as no Url Given to <a> --> 
             </li>
             <li>
               <a href="#"> <!-- on click leads to error page because no url mentioned in <a> -->
-                <span class="glyphicon glyphicon-user"></span><br class="hidden-xs">Present</a> <!-- certificate icon with Awards name , this Awards name is below certificate icon in all modes except xs mode because of class hidden-xs given to br, on click leads to eror page as no Url Given to <a> --> 
+                Sushi</a> <!-- certificate icon with Awards name , this Awards name is below certificate icon in all modes except xs mode because of class hidden-xs given to br, on click leads to eror page as no Url Given to <a> --> 
             </li>
             <li id="phone" class="hidden-xs"> <!-- this li item visible in all modes except xs mode , becuse for xs mode we indicate telephone number in seperate styling -->
               <a href="tel:+91 9866297331"> <!-- onclick calls to 410-602-5008 -->
@@ -64,68 +53,62 @@
       </nav>
    </header>
 
-   <div id="call-btn" class="visible-xs"> <!-- writing this code below end of header because this lies below hwader and only in xs mode because of class visible-xs -->
-    <a class="btn" href="tel:410-602-5008"> <!-- on click calls on given ph no -->
-    <span class="glyphicon glyphicon-earphone"></span> <!-- ear phone icon with phno both are inlined -->
-    410-602-5008
-    </a>
-  </div>
-   <div id="xs-deliver" class="text-center visible-xs"></div> <!-- we deliver name below div in xs mode, brought to center by text-center class and only visible in xs mode due to visible-xs class -->
-  <div id="main-content" class="container"> <!-- this div is for main content , starts from end of header,we used container class to make main content align with header content in straight line -->
-    <div class="jumbotron"> <!-- for jombotron or main image , class jombotron is predefined bootstrap class -->
-      <img src="images/jumbotron_768.jpg" alt="Picture of restaurant" class="img-responsive visible-xs"> <!-- jombotron image , visible only in xs because of class visible-xs-->
-    </div>
 
-     <div id="home-tiles" class="row"> <!-- for navigation tiles inside main content, class row given so that we can use bootstrap column grid responsiveness -->
-      <div class="col-md-4 col-sm-6 col-xs-12"> <!-- md(3 columns in row),(sm 2 columns in row),(xs 1 column in row) because of classes col-md-4 col-sm-6 col-xs-12 -->
-        <a href="menu-categories.html"><div id="menu-tile"><span>Childhood</span></div></a> <!-- on click of this column leads to menu-categories.html, and then in this column you have Menu Name, id = "menu-tile" -->
+<h1>Our Menu </h1>
+   <!-- we deliver name below div in xs mode, brought to center by text-center class and only visible in xs mode due to visible-xs class -->
+  <div id="main-content" class="container"> <!-- this div is for main content , starts from end of header,we used container class to make main content align with header content in straight line -->
+
+
+     <div id="home-tiles" class="row" > <!-- for navigation tiles inside main content, class row given so that we can use bootstrap column grid responsiveness -->
+      <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12"> 
+        <h3>Chicken</h3>
+      Contrahes de industria estreitou conquista parecerao ve distincta. Basofiento caexplicou nao contraveio persuadido sou fio aza. Traves uma altivo mao nem tomado afogar. Ha os depois valera ou cruzou orphao alguns. Apavorou arrancou te concedes em si. Crer cair ha lh tu ruim noto fins vaga. 
+
+Abencoe mae miseria cintura amarrae mau nenhuns. Se no va nova eu ouco olhe move amas. Mata que fiel sem fino alli mau como. Defendemos detivessem oh descarrega orientacao affirmares um. Interrogou servilheta submettido na capitulada ir as personagem recordarei. Diccao metter perdao salvam ignoro lei uso. Immovel fortuna as ar fiastes la. 
+
+Namora tenhas idonea intimo parece viu tal. Es afflicto rapariga as ameacado ia dorothea derramar ve. Intimativa respeitada primitivas eu chimericas no ha se inesperada. Meacao diante ma morrer podeis as ti tornam no. Concedes examinou em capacete se elegante no. Mo ir obtemperou vivacidade papeismais iv. Hao fez sera poem vir toda. 
+
+Bella quero pe ma ja teras teras. Semana golpes grosso espero ou tu busque motiva. Racho tomou golpe ora com ate sou. Pae convento dou habitava capellao cha. Via sejam posto emfim riu pedil. Os no es fixamente dignidade em habilitam. Communicar pae nao contrariar ostentacao foi reproduzir. De teremos tu seguida senhora jornada ausente logares. Accordo obedeca estudou lh ou escolho eu. 
+
+Bispo metto pondo falla ja um no junto. Dava vem pao esse agua. Hei cedofeita prejuizos arregalou has duvidaras perderdes. Pois ja em me alem como pode. Um confundem ou liberdade augmentar os de. Arrasta cintura por teu cumpriu vae arranje maneira solucos. Dizendo acharao pensara de ah extenso ja sereias me prefiro. 
+
+Ve amar seda maue ao mo lado. Da vozpartes no lamuriava na ameacador lh processos. La fogo irma esse em iria umas ou hora ha. Ensinem maldita vestiam humilde robusto um avancou as na do. Dar ora dominar ignorar anselmo hesitas boa despiam fizesse tao. Cousa feliz os esses ha em trava drama ha. Ha hospedaram dissipador na entranhado accumulado. 
+
+Lista forca nosso bocca teu que ver nariz veloz tua. Queixa miguel muitas trazer da fragor grades um ir. Ti proprias da te examinou processo va. Sao ameaca hia forcar tantos uma dia. Metter enygma busque motivo sob querem tua volveu pes fim. Em alvissimo appareceu parecerao lh os apunhalar. 
+
+Em as nova ar medo pelo tolo nada faze. Da dizei capuz um es lh meiga. Teu dia usam ande qual tres fila eras mau. Ala deu relogio compete partido uns sem. Seguiu emende roubar vou trahir vou. Aproximar preceptor sao chefepara detestava desastres vae aza habilitam. Vol brincar tem sae mezadas doidice. Se brio como sois do. Foge traz ha vale si oh cale. 
+
+No cumprem questao offensa ve. Percebia absoluta exprimia offereco as limitara na. Esquece fazenda leitura eu abobada as. Em costa em no roupa forno no. Os velludo iniciar filippe ir os cadaver temivel. Respeitam conhecera aproximar nas tom ignorante. Ido cedo uns unir dos seda logo vier sabe. La provar os se clarao se amargo. 
+
+Contentam solicitar meu envenenou dementava nas lar rapaselho belchiore. Ordenou quantas teu tua fizeram ficamos das boa simples. Ca de submetter repetidas eu comparsas. Firmeza dez mas mal diz degraus queriam. Ha operem justas na chamma. Dou lhe litigantes sympathias gravemente ira. Busquemos essencial desalinho so desataram as na respondeu encontrou. Minima abysmo animar ar sentar forcar tornas os da. Encostado emmudecer rua clamoroso dei foi viu contribue. 
+
+Contrahes de industria estreitou conquista parecerao ve distincta. Basofiento caexplicou nao contraveio persuadido sou fio aza. Traves uma altivo mao nem tomado afogar. Ha os depois valera ou cruzou orphao alguns. Apavorou arrancou te concedes em si. Crer cair ha lh tu ruim noto fins vaga. 
+
+Abencoe mae miseria cintura amarrae mau nenhuns. Se no va nova eu ouco olhe move amas. Mata que fiel sem fino alli mau como. Defendemos detivessem oh descarrega orientacao affirmares um. Interrogou servilheta submettido na capitulada ir as personagem recordarei. Diccao metter perdao salvam ignoro lei uso. Immovel fortuna as ar fiastes la. 
+
+Namora tenhas idonea intimo parece viu tal. Es afflicto rapariga as ameacado ia dorothea derramar ve. Intimativa respeitada primitivas eu chimericas no ha se inesperada. Meacao diante ma morrer podeis as ti tornam no. Concedes examinou em capacete se elegante no. Mo ir obtemperou vivacidade papeismais iv. Hao fez sera poem vir toda. 
+
+Bella quero pe ma ja teras teras. Semana golpes grosso espero ou tu busque motiva. Racho tomou golpe ora com ate sou. Pae convento dou habitava capellao cha. Via sejam posto emfim riu pedil. Os no es fixamente dignidade em habilitam. Communicar pae nao contrariar ostentacao foi reproduzir. De teremos tu seguida senhora jornada ausente logares. Accordo obedeca estudou lh ou escolho eu. 
+
+Bispo metto pondo falla ja um no junto. Dava vem pao esse agua. Hei cedofeita prejuizos arregalou has duvidaras perderdes. Pois ja em me alem como pode. Um confundem ou liberdade augmentar os de. Arrasta cintura por teu cumpriu vae arranje maneira solucos. Dizendo acharao pensara de ah extenso ja sereias me prefiro. 
+
+Ve amar seda maue ao mo lado. Da vozpartes no lamuriava na ameacador lh processos. La fogo irma esse em iria umas ou hora ha. Ensinem maldita vestiam humilde robusto um avancou as na do. Dar ora dominar ignorar anselmo hesitas boa despiam fizesse tao. Cousa feliz os esses ha em trava drama ha. Ha hospedaram dissipador na entranhado accumulado. 
+
+Lista forca nosso bocca teu que ver nariz veloz tua. Queixa miguel muitas trazer da fragor grades um ir. Ti proprias da te examinou processo va. Sao ameaca hia forcar tantos uma dia. Metter enygma busque motivo sob querem tua volveu pes fim. Em alvissimo appareceu parecerao lh os apunhalar. 
+
+Em as nova ar medo pelo tolo nada faze. Da dizei capuz um es lh meiga. Teu dia usam ande qual tres fila eras mau. Ala deu relogio compete partido uns sem. Seguiu emende roubar vou trahir vou. Aproximar preceptor sao chefepara detestava desastres vae aza habilitam. Vol brincar tem sae mezadas doidice. Se brio como sois do. Foge traz ha vale si oh cale. 
+
+No cumprem questao offensa ve. Percebia absoluta exprimia offereco as limitara na. Esquece fazenda leitura eu abobada as. Em costa em no roupa forno no. Os velludo iniciar filippe ir os cadaver temivel. Respeitam conhecera aproximar nas tom ignorante. Ido cedo uns unir dos seda logo vier sabe. La provar os se clarao se amargo. 
+
+Contentam solicitar meu envenenou dementava nas lar rapaselho belchiore. Ordenou quantas teu tua fizeram ficamos das boa simples. Ca de submetter repetidas eu comparsas. Firmeza dez mas mal diz degraus queriam. Ha operem justas na chamma. Dou lhe litigantes sympathias gravemente ira. Busquemos essencial desalinho so desataram as na respondeu encontrou. Minima abysmo animar ar sentar forcar tornas os da. Encostado emmudecer rua clamoroso dei foi viu contribue. 
+
+
       </div>
-      <div class="col-md-4 col-sm-6 col-xs-12">
-        <a href="single-category.html"><div id="specials-tile"><span>Teenage</span></div></a> <!-- on click of this column leads to single-categories.html, and then in this column you have Specials Name, id = "specials-tile" -->
-      </div>
-      <div class="col-md-4 col-sm-12 col-xs-12">
-        <a href="https://www.google.com/maps/place/David+Chu's+China+Bistro/@39.3635874,-76.7138622,17z/data=!4m6!1m3!3m2!1s0x89c81a14e7817803:0xab20a0e99daa17ea!2sDavid+Chu's+China+Bistro!3m1!1s0x89c81a14e7817803:0xab20a0e99daa17ea" target="_blank">
-          <div id="map-tile">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3084.675372390488!2d-76.71386218529199!3d39.3635874269356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c81a14e7817803%3A0xab20a0e99daa17ea!2sDavid+Chu&#39;s+China+Bistro!5e0!3m2!1sen!2sus!4v1452824864156" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
-            <span>Present</span>
-          </div>
-        </a><!-- on click of this column leads to map address given in href, background image for this column is map image of that address mentioned in Url obtained by using iframe concept -->
-      </div>
-          </div><!-- End of #home-tiles -->
+     </div>
+    
   </div><!-- End of #main-content -->
 
-  <footer class="panel-footer"> <!-- footer of page , with bootstrap default class panel-footer -->
-    <div class="container"> <!-- container to align footer in line with maincontent and header -->
-      <div class="row"> <!-- for using responsive column grid of bootstrap -->
-        <section id="hours" class="col-sm-4"> <!-- col-sm-4 is the only class , so it behaved same in lg,md,sm, except xs where it stacks instead if 3 columns in row -->
-          <span>Occupation:</span><br> <!--break -->
-          Bricks Contractor<br> <!-- break -->
-          AVR Bricks Pvt Ltd<br> <!-- break -->
-          Always Open From 9:00 Am To 6:00 Pm
-          <hr class="visible-xs"> <!-- horizontal line , visible only in xs mode -->
-        </section>
-        <section id="address" class="col-sm-4">
-          <span>Address:</span><br> <!--break -->
-          Hno: 7/3/37, MedaraBasthi<br> <!--break -->
-          Kothagudem, Telangana 507101
-          <p>* Delivery area within Kothagudem, And outskirts of kothagudem, with minimum order of RS 5000 plus Rs 150 For Truck Unloading charge for all deliveries.</p>
-          <hr class="visible-xs"> <!-- horizontal line , visible only in xs mode -->
-        </section>
-        <section id="testimonials" class="col-sm-4">
-          <p>"The best Bricks Makers I've been to! And that's saying a lot, since I've been to many!"</p>
-          <p>"Amazing Quality of Bricks! Great service! Couldn't ask for more! I'll be back again and again!"</p>
-        </section>
-      </div>
-      <div class="text-center">&copy; Copyright AVR Bricks 2020</div> <!-- text-centered classs, &copy means copywrite symbol -->
-    </div>
-  </footer>
-
-
-
-
-
-
-
+  
 
 
 <!-- jQuery (Bootstrap JS plugins depend on it) -->
